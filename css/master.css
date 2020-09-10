@@ -16,7 +16,7 @@
 
   body {
     background-color: #FFFFFF; /* set the background color here */
-    color: black; /* set the text color to black here */
+    color: #EF7F21; /* set the text color to black here */
     font-family: Courier, Arial, Helvetica, sans-serif;/* set the font here */
     text-align: center; /* set the text alignment here */
     font-weight: normal;
@@ -37,14 +37,11 @@
   h2 {
     margin-bottom:1rem;
     margin-top:1rem;
-    color: #075AAB; /* set the text color of to #075AAB here */
-    /* set both the bottom margin and top margin to 2.5rem here */
    }
 
   h3 {
     font-weight: normal;
     letter-spacing: 3px;
-    color: #EF7F21;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
@@ -55,7 +52,7 @@
   }
 
   h5 {
-    color: #EF7F21;
+    
     letter-spacing: 2px;
     margin-top: 0.5rem;
   }
