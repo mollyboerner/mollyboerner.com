@@ -2,6 +2,12 @@
 
 /* Text inside these asterisks and slashes are comments for human */
 
+<style> 
+  h1, h2, h3, h4, h5, h6, h7{
+    font-weight: normal;
+  }
+</style>
+
   a {
     color: #F76AAA;/* set the text color to blue here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
