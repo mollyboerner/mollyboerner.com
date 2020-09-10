@@ -23,6 +23,7 @@
     color: black; /* set the text color to black here */
     font-family: Arial, Helvetica, sans-serif;/* set the font here */
     text-align: center; /* set the text alignment here */
+    font-weight: normal;
    }
 
   footer {
