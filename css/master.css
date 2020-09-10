@@ -5,18 +5,18 @@
 
 
   a {
-    color: #F76AAA;/* set the text color to blue here */
+    color: #EF7F21;/* set the text color to blue here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
   a:hover {
-    color: #EF7F21;
+    color: #4a4a4a;
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
   body {
     background-color: #FFFFFF; /* set the background color here */
-    color: #EF7F21; /* set the text color to black here */
+    color: #4A4A4A; /* set the text color to black here */
     font-family:  Arial, Helvetica, sans-serif;/* set the font here */
     text-align: center; /* set the text alignment here */
     font-weight: 100px;
