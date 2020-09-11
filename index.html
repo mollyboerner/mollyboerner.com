@@ -44,6 +44,18 @@
       height: auto;
       transition: .7s ease;
      }
+      
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #E8AF23;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
 
     .middle {
       transition: .5s ease;
@@ -63,6 +75,11 @@
      .container:hover .middle {
        opacity: 1;
      }
+      
+    .container:hover .overlay {
+      width: 100%;
+      left: 0;
+    }
 
     .text {
       color: black;
@@ -86,9 +103,9 @@
       <div class="column" >  
         <div class="container">
           <img src="images/man-on-a-tree-pink.jpg" class="image">
-          <div class="middle">
-            <div class="text">Man on a Tree</div>
-          </div>
+          <div class="overlay">
+            <div class="text">Hello World</div>
+           </div>
         </div>
         <div class="container"> 
           <img src="images/birds.jpg" class="image">
