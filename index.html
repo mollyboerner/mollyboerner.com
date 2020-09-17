@@ -46,20 +46,7 @@
       transition: .7s ease;
      }
       
-  .overlayleft {
-    position: absolute;
-    opacity: .7;
-    bottom: 0;
-    left: 97.5%;
-    right: 0;
-    background-color: #E8AF23;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
-  }
-
-  .overlayright {
+  .overlay {
     position: absolute;
     opacity: .7;
     bottom: 0;
@@ -72,33 +59,32 @@
     transition: .5s ease;
   }
 
-    .container:hover .image {
+ 
+
+/*     .container:hover .image {
       opacity: 0.5;
-     }
+     } */
       
-    .container:hover .overlayleft {
+    .container:hover .overlay {
       width: 97.5%;
-      left: 0;
+      opacity: 0.5;
     }
       
-    .container:hover .overlayright {
-      width: 97.5%;
-      left: 0;
-    }
+    
 
     .text {
       color: white;
       background-color: #E8AF23;
       font: Arial;
       font-size: 20px;
-      padding: 16px 32px;
+/*       padding: 16px 32px; */
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
+/*       -webkit-transform: translate(-50%, -50%); */
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      white-space: nowrap;
+/*       white-space: nowrap; */
     }
     </style>
   </head>
@@ -115,7 +101,7 @@
       <div class="column" >  
         <div class="container">
           <img src="images/man-on-a-tree-pink.jpg" class="image">
-          <div class="overlayleft">
+          <div class="overlay">
             <div class="text">
               <h3> Man on a Tree </h3>
               
@@ -124,7 +110,7 @@
         </div>
         <div class="container"> 
           <img src="images/birds.jpg" class="image">
-          <div class="overlayleft">
+          <div class="overlay">
             <div class="text">
               <h3> Birds </h3>
               
@@ -133,7 +119,7 @@
        </div>
        <div class="container">
           <img src="images/friends.jpg" class="image">
-          <div class="overlayleft">
+          <div class="overlay">
             <div class="text">
               <h3> Friends </h3>
               
@@ -142,7 +128,7 @@
         </div>
        <div class="container">
          <img src="images/easyrider.jpg" class="image">
-         <div class="overlayleft">
+         <div class="overlay">
             <div class="text">
               <h3> Easy Rider </h3>
               
@@ -152,7 +138,7 @@
        
        <div class="container">
          <img src="images/pittsburgh.PNG" class="image">
-         <div class="overlayleft">
+         <div class="overlay">
             <div class="text">
               <h3> Pittsburgh </h3>
               
@@ -166,7 +152,7 @@
       <div class="column">
          <div class="container">
           <img src="images/catsinquarantine.png" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> Cats in Quarantine </h3>
               
@@ -176,7 +162,7 @@
        
         <div class="container">
           <img src="images/mansittingonatree.jpg" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> Man on a Tree </h3>
              
@@ -185,7 +171,7 @@
         </div>
         <div class="container">
           <img src="images/squirrels.jpg" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> Squirrels </h3>
               
@@ -194,7 +180,7 @@
         </div>
         <div class="container">
           <img src="images/fuzzyworm.jpg" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> Fuzzyworm </h3>
              
@@ -204,7 +190,7 @@
        
        <div class="container">
          <img src="images/monster1.jpg" class="image">
-         <div class="overlayright">
+         <div class="overlay">
             <div class="text">
               <h3> Tiny Monster </h3>
              
@@ -216,7 +202,7 @@
       <div class="column">
          <div class="container">
           <img src="images/the-boys.jpg" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> The Boys </h3>
             </div>
@@ -224,7 +210,7 @@
          </div>
          <div class="container">
           <img src="images/dinosaurs.jpg" class="image">
-          <div class="overlayright">
+          <div class="overlay">
             <div class="text">
               <h3> Dinosaurs </h3>
             </div>
@@ -232,7 +218,7 @@
          </div>
         <div class="container">
          <img src="images/racoon.PNG" class="image">
-         <div class="overlayleft">
+         <div class="overlay">
             <div class="text">
               <h3> Racoon </h3>
             </div>
@@ -240,7 +226,7 @@
         </div>
         <div class="container">
          <img src="images/january.jpg" class="image">
-         <div class="overlayleft">
+         <div class="overlay">
            <div class="text">
               <h3> January </h3> 
            </div>
