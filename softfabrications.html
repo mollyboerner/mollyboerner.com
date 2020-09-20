@@ -14,22 +14,203 @@
     <meta name='robots' content='noindex, nofollow'>
   </header>
   
+  <head>
+    <style>
+    {
+      box-sizing: border-box;
+    }
+    .column {
+      z-index: -1;
+      float:left;
+      width: 33%;
+    }
+    .column img {
+      z-index: -1;
+      margin-top: 0;
+    }
+      
+    .row:after {
+      content:"";
+      display: table;
+      clear: both;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+    }
+
+    .image {
+      z-index: -1;
+      alignment: center;
+      display: block;
+      width: 99%;
+      height: auto;
+      margin-bottom: 6px;
+     }
+      
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0%;
+    background-color: #E8AF23;
+    width: 99%;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+ 
+
+/*     .container:hover .image {
+      opacity: 0.5;
+     } */
+      
+    .container:hover .overlay {
+      opacity: .8;
+    }
+      
+    
+
+    .text {
+      color: white;
+      font: Arial;
+      font-size: 20px;
+/*       padding: 16px 32px; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+/*       -webkit-transform: translate(-50%, -50%); */
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+/*       white-space: nowrap; */
+    }
+      
+   .topnav {
+      z-index: 1;
+      overflow: hidden;
+/*       background-color: #333; */
+    }
+      
+   .sticky {
+      z-index: 1;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: white;
+    }
+   
+   .topnav img{
+     z-index: 1;
+     float: left;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     
+    }
+     
+
+   .topnav a {
+      z-index: 1;
+      float: right;
+      color: #E8AF23;
+      text-align: center;
+      padding-right: 8px;
+      padding-left: 8px;
+      padding-top: 25px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+
+  .topnav a:hover {
+      color: #EF7F21;
+    }
+
+  .topnav a.active {
+     color: #EF7F21;
+    }
+      
+/*   .logo {
+     float: right;
+      } */
+    </style>
+  </head>
      
   <body>
-    <img src='images/banner7.jpg' width='50%'>
-    <h3><a href="index.html">illustrations</a>  -  soft fabrication  -  <a href="projects.html">projects</a>  -  <a href="https://www.etsy.com/shop/PUGGLESnPRARIE?ref=search_shop_redirect">store</a>  -  <a href='about.html'>about</a> </h3>
-    <p> </p>
-    <p> </p>
-    <img src='images/raindrop.jpg' width='70%' style='border-radius: 8px'>
-    <p> </p>
-    <img src='images/inflatablemonster.jpg' width='70%'>
-    <p> </p>
-    <img src='images/dudes.jpg' width='70%'>
-    <p> </p>
-    <img src='images/hand.jpg' width='70%'>
-    <p> </p>
-    <img src='images/magicwallet.jpg' width='70%'>
-    <p> </p>
+    <div class='sticky'>
+      <div class="topnav">
+        <img src='images/banner7.jpg' width='35%'>
+        <a> </a>
+        <a href="about.html" padding-right:'20px'>about</a>
+        <a> - </a>
+        <a href="#about" >store </a>
+        <a> - </a>
+        <a class='active'>soft fabrication</a>
+        <a> - </a>
+        <a href="#contact">projects</a>
+        <a> - </a>
+        <a href="index.html">illustrations</a>
+      </div>
+    </div>
+
+    <p>
+   
+      
+    </p>
+    
+    <div class ='row'>
+      <div class='column' style="width:37%;">
+        <div class='container'>
+          <img src="images/dude-cover.jpeg" class="image">
+          <div class='overlay'>
+            <div class='text'>
+              <h3> Little Dudes </h3>
+            </div>
+          </div>
+        </div>
+        <div class='container'>
+          <img src="images/hand-cover.jpg" class="image">
+          <div class='overlay'>
+            <div class='text'>
+              <h3> Hand - Doppelgänger </h3>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class='column' style="width:63%;">
+        <div class='container'>
+          <img src="images/raindrop-cover.jpeg" class="image">
+          <div class='overlay'>
+            <div class='text'>
+              <h3> Raindrop - Inflatables and Soft Sculpture Final Project</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='row'>
+      <div class='column' style="width:59.5%;">
+        <div class='container'>
+          <img src="images/magic wallet-cover.jpeg" class='image'>
+          <div class="overlay">
+            <div class='text'>
+              <h3> Magic Wallet - DIY Design and Fabrication Final Project </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='column' style="width:40.5%;">
+        <div class='container'>
+          <img src="images/monster.jpg" class="image">
+          <div class="overlay">
+            <div class='text'>
+              <h3> Inflatable Monster </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <footer>
