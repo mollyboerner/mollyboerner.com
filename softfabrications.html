@@ -70,6 +70,13 @@
       opacity: .8;
     }
       
+    .frontimage {
+      opacity: 1;
+      }
+      
+    .container:hover .frontimage{
+      opacity: 0;
+      }
     
 
     .text {
@@ -161,7 +168,10 @@
     <div class ='row'>
       <div class='column' style="width:29.6%;">
         <div class='container'>
-          <img src="images/dude-cover.jpeg" class="image">
+          <div class='frontimage'>
+            <img src="images/dude-cover.jpeg" class="image">
+          </div>
+            <img src="images/hand-cover.jpg" class="image">
           <div class='overlay'>
             <div class='text'>
               <h3> Little Dudes </h3>
