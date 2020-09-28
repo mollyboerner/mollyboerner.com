@@ -124,6 +124,7 @@
     padding-top: 40px;
     padding-top: 40px;
     top: 0;
+    left:0;
     width: 50%;
     height: 100%;
     overflow: auto;
@@ -351,7 +352,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target != modal) {
+  if (modal.sttle.display == "block") and (event.target != modal) {
     modal.style.display = "none";
   }
 }
