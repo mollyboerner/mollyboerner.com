@@ -171,6 +171,30 @@
   z-index: 2;
   cursor: pointer;
 }
+      .modal {
+    transition: .75s ease;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 40px;
+    padding-top: 40px;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 1);
+  }
+
+/* Modal Content */
+      
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  max-width: 400px;
+}
       
     </style>
   </head>
@@ -204,7 +228,7 @@
     <div class ='row'>
       <div class='column' >
 <!--         <a href="dudes.html"> -->
-          <div class='container' onclick="on()">
+          <div class='container' onclick="openModal()">
             <img src="images/dudesquare2.jpg" class="backimage">
             <img src="images/dudesquare1.jpg" class="frontimage">
           </div>
@@ -254,13 +278,14 @@
   </body>
   
   <script>
-    function on() {
-    document.getElementById("overlay").style.display = "block";
-                  }
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-    function off() {
-     document.getElementById("overlay").style.display = "none";
-                    }
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
 </script>
 
   <footer>
